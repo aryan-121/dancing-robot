@@ -1,3 +1,6 @@
+let body = document.getElementById("body");
+let sound = document.getElementById("sound");
+
 function headFunBack() {
 
     head.style.width = `75px`;
@@ -28,7 +31,18 @@ function dance() {
 }
 
 setInterval(dance, 1000)
-let audio = document.createElement("audio");
-audio.setAttribute("src", "music.mp3");
-audio.autoplay = true;
-audio.play();
+const playing = () => {
+    let audio = document.createElement("audio");
+    audio.setAttribute("src", "music.mp3");
+    audio.autoplay = true;
+    audio.play();
+}
+
+let change = () => {
+    sound.setAttribute("src", "sound.png")
+    playing();
+}
+
+body.addEventListener("click", playing);
+
+sound.addEventListener("click", change);

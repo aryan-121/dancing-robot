@@ -4,6 +4,21 @@ h1 {
     text-align: center;
 }
 
+#sound {
+    border: black 2px solid;
+    padding: 1em;
+    border-radius: 2em;
+    position: absolute;
+    top: 5%;
+    right: 7%;
+}
+
+h3 {
+    text-align: center;
+    opacity: 0.6;
+    font-family: 'Lobster', cursive;
+}
+
 
 /* #container {
     background-image: url(stage2.png);
