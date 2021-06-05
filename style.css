@@ -120,3 +120,11 @@ h3 {
         transition: 1s ease-in;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    #sound {
+        top: 12%;
+        right: 0%;
+        border: 0;
+    }
+}
