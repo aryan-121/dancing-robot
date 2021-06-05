@@ -1,0 +1,107 @@
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+/* #container {
+    background-image: url(stage2.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+} */
+
+#upper {
+    display: flex;
+    justify-content: center;
+}
+
+#head {
+    position: relative;
+    background-color: #5f93e8;
+    padding: 75px 75px;
+    width: 75px;
+    height: 10px;
+    border-radius: 300px 300px 0px 0px;
+    margin-bottom: 10px;
+    animation: headMove Linear 4s infinite;
+}
+
+.eye {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 17px;
+    background-color: white;
+}
+
+#eye1 {
+    top: 58%;
+    left: 25%;
+}
+
+#eye2 {
+    top: 58%;
+    left: 142px;
+}
+
+#last {
+    position: relative;
+}
+
+#upper_body {
+    display: flex;
+    justify-content: center;
+}
+
+.hand {
+    background-color: #5f93e8;
+    height: 160px;
+    width: 50px;
+    border-radius: 150px;
+}
+
+#torso {
+    background-color: #5f93e8;
+    padding: 75px 75px;
+    width: 75px;
+    margin: 0px 10px 0px 10px;
+    height: 80px;
+    border-radius: 0px 0px 120px 120px;
+}
+
+#lower_body {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 190px;
+}
+
+.leg {
+    background-color: #5f93e8;
+    height: 110px;
+    width: 45px;
+    border-radius: 150px;
+}
+
+#space {
+    width: 50px;
+}
+
+@keyframes headMove {
+    0% {
+        width: 75px;
+        transition: 1s ease-in;
+    }
+    50% {
+        width: 100px;
+        transition: 1s ease-in-out;
+    }
+    100% {
+        width: 75px;
+        transition: 1s ease-in;
+    }
+}
